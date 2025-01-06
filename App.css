@@ -1,0 +1,171 @@
+/* .custom-calendar {
+    background-color: red !important;
+    color: white !important; 
+  } */
+
+  .custom-calendar .fc-toolbar-title {
+    color: rgb(218, 79, 79) !important;
+    /* White title color */
+  }
+  
+  .custom-calendar .fc-button {
+    border: none;
+    background-color: #d9534f !important;
+    /* Optional: red button color */
+    color: white !important;
+    /* White button text */
+  }
+  
+  .custom-calendar .fc-button:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+    transition: 1000ms;
+  }
+  
+  .custom-calendar .fc-daygrid-day-number {
+    color: black !important;
+    /* White day numbers */
+    border: none;
+  }
+  
+  .fc-daygrid-body {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .fc-daygrid-day {
+    background-color: white;
+  }
+  
+  .fc-col-header-cell {
+    background-color: #ffffff; /* Blue background */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .fc-daygrid-day {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .fc-daygrid-day-number {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+  }
+  
+  .fc-day-today {
+    background-color: #f9f9f9; /* Light yellow background */
+    font-weight: bold;
+  }
+  
+  .fc-scrollgrid a {
+    text-decoration: none;
+    color: #d9534f;
+  }
+  .fc-daygrid-event-dot{
+    margin: 0px;
+    /* padding: 0px; */
+    /* width: 3px; */
+    border-top: 25px solid #d32e29 !important;
+    /* border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important  ; */
+    border: calc(var(--fc-daygrid-event-dot-width) / 2) solid #dc3545;
+    border-radius: unset !important;
+  }
+  .fc-event{
+    border-radius: 10px;
+    overflow: hidden;
+    border: unset;
+    align-items: center;
+  }
+  .fc-event .fc-event-main{
+    background-color: rgb(236 175 175 / 95%);
+  }
+  .fc .fc-daygrid-event {
+    /* margin-right: 1px; */
+    margin-left: 0px !important;
+    z-index: 6;
+    background-color: rgb(236 175 175 / 95%);
+  }
+  .fc-daygrid-event{
+    border-radius: 10px !important;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .fc-event-time{
+    /* display: none; */
+    justify-content: center;
+    margin-left: 15px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .fc-event-title{
+    align-items: center;
+    color: black;
+    margin-left: 15px;
+    font-weight: 400;
+  }
+  
+  .fc-event-main-frame:before {
+    content: "";
+    width: 10px;
+    background: #d32e29;
+    z-index: 5;
+    display: block;
+    position: absolute;
+    height: 100%;
+  }
+  .fc-event-main-frame{
+    border-radius: 20px;
+  }
+  
+  .fc-day-today .fc-daygrid-day-frame.fc-scrollgrid-sync-inner{
+    background-color: white;
+    border: 1px solid #d32e29;
+  }
+  
+  .form-control:focus{
+    border-color: #dc3545 !important; /* Bootstrap 'danger' color */
+    box-shadow: 0 0 0 0.25rem rgba(214, 69, 84, 0.473) !important;
+  }
+  
+  /* .form-select:focus{
+    border-color: #d9534f;
+    box-shadow: 0 0 10px #d32e29;
+  } */
+  
+  .form-select:focus {
+    border-color: #dc3545 !important; /* Bootstrap 'danger' color */
+    box-shadow: 0 0 0 0.25rem rgba(214, 69, 84, 0.473) !important;
+  }
+  
+  
+  
+  input[type="date"] {
+  
+    /* padding: $input-padding-y $input-padding-x; */
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: lighten(#d32e29, 40%);
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 10px rgba(#d32e29, 0.5);
+    }
+  }
+  .datepicker table tr td.day:hover{
+    background-color: #d32e29;
+  }
+  .datepicker table tr td.today{
+    background-color: #d32e29;
+  }
